@@ -1,0 +1,36 @@
+@import "grid.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.header {
+    height: 100px;
+    background: rgb(88,58,166);
+}
+.menu-btn {
+    height: 40px;
+    display: flex;
+    div {
+        width: 33.33333333333333%;
+        border: 1px solid black;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 10px;
+        
+    }
+    div:nth-child(1) {
+        background: rgb(109,63,177);
+        color: #ffffff
+    }
+    div:nth-child(2) {
+        background: rgb(212,205,231)
+    }
+}
