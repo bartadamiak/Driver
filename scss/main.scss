@@ -14,13 +14,43 @@
 .header {
     height: 100px;
     background: rgb(88,58,166);
+    display: flex;
+    div {
+        width: 33.33333333%;
+    }
+    .header-logo {
+        color: #ffffff;
+        font-size: 50px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 20px;
+        font-weight: 900;
+    }
+    .header-log-section {
+       
+        color: #ffffff;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .header-log-section-bottom {
+            display: flex;
+            justify-content: space-between
+        }
+        div {
+            width: 100%;
+        }
+        
+    }
 }
 .menu-btn {
     height: 40px;
     display: flex;
     div {
         width: 33.33333333333333%;
-        border: 1px solid black;
         text-align: center;
         text-transform: uppercase;
         padding-top: 10px;
@@ -28,9 +58,14 @@
     }
     div:nth-child(1) {
         background: rgb(109,63,177);
-        color: #ffffff
+        color: #ffffff;
+        cursor: pointer;
     }
     div:nth-child(2) {
-        background: rgb(212,205,231)
+        background: rgb(212,205,231);
+        cursor: pointer;
+    }
+    div:nth-child(3) {
+        background: rgb(229,229,229);
     }
 }
